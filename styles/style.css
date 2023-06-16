@@ -12,39 +12,137 @@ body{
 .hero-section{
     background-color: black;
     display: flex;
-    /* justify-content: space-between; */
+    width: 1321px;
     align-items: center;
+    height: 646px;
     margin: 50px 140px;
     border-radius: 30px;
     
 }
 .hero-title{
-    width: 50%;
-    padding-left: 106px;
+    width: 531px;
+    padding-left: 80px;
+    
 }
 .title-name{
 font-style: normal;
 font-weight: 700;
-font-size: 2.4rem;
+font-size: 4.375rem;
 color: #FFFFFF;
 margin-bottom: 20px;
 line-height: 1;
 }
 .title-description{
-font-weight: thin;
+text-transform: lowercase;
 font-size: 1rem;
 color: #FFFFFF;
 margin-bottom: 20px;
-line-height: 1;
+font-style: normal;
 }
-.hero-button{
-    padding: 16px 25px;
+.hero-btn{padding: 16px 25px;
     background-color: #DD0000;
     border-radius: 5px;
     border: none;
-}
-.hero-button a{
     text-decoration: none;
     color: #FFFFFF;
+    border-radius: 10px;
+    
+}
+    
+
+
+.hero-img img{
+    width: 581px;
+height: 628px;
+padding-top: 20px;
+
+/* Mobile responsive */
+}
+@media only screen and (max-width:688px) {
+    .hero-section{
+        flex-direction: column;
+        width: 334px;
+        height: 502px;
+        align-items: center;
+        margin:auto;
+        /* justify-content: space-between; */
+        border-radius: 10px;
+          
+    }
+    .hero-title{
+        display: flex;
+        flex-direction: column;
+        width: 258px;
+        height: 178px;
+        padding: 21px 38px;
+    }
+    
+     
+    .title-name{
+        font-size: 22px;
+        text-align: center;
+    }
+    .title-description{
+        font: size 14px;
+        text-align: center;
+    }
+    .hero-btn{
+        padding: 0px 0px;
+        text-align: center;
+    }
+    .hero-img img{
+        width: 233px;
+        height: 245px;
+        padding-top: 40px;
+
+        
+    }
+}
+.middle-section{
+    display:flex;
 }
 
+.btn-section{
+    width: 312px;
+height: 312px;
+background-color:black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:space-evenly;
+margin-left: 140px;
+border-radius: 10px;
+
+}
+.blog-btn{
+    width: 252px;
+    padding: 17px;
+background-color: white;
+color: black;
+text-align: center;
+border-radius: 10px;
+cursor: pointer;
+font-weight: 500;
+}
+.blog-btn:hover{
+    background-color:red;
+    color: white;
+    font-weight: 500;
+}
+.blogs-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+height: 362px;
+border: 1px solid grey;
+border-radius: 10px;
+}
+.blog-info{
+    padding: 20px ;
+}
