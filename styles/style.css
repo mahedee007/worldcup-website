@@ -3,7 +3,7 @@
 /* Common styles */
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -58,7 +58,7 @@ padding-top: 20px;
 
 /* Mobile responsive */
 }
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:576px) {
     .hero-section{
         flex-direction: column;
         width: 334px;
@@ -97,13 +97,15 @@ padding-top: 20px;
 
         
     }
+    
 }
 .middle-section{
     display:flex;
 }
 
+
 .btn-section{
-    width: 312px;
+width: 312px;
 height: 312px;
 background-color:black;
 display: flex;
@@ -114,6 +116,7 @@ margin-left: 140px;
 border-radius: 10px;
 
 }
+
 .blog-btn{
     width: 252px;
     padding: 17px;
@@ -147,3 +150,83 @@ border-radius: 10px;
 .blog-info{
     padding: 20px ;
 }
+.matches-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 20px;
+}
+.match{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 312px;
+height: 242px;
+padding-top: 53px;
+border-radius: 10px;
+}
+.match-info{
+    text-align:center;
+}
+.flag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vs{
+    padding: 0 20px;
+    font-weight: 400;
+}
+footer{
+    background-color:black;
+    
+}
+.footer-head{
+    color: white;
+    text-align: center;
+    padding: 130px 0 10px 0;
+    font-size:40px;
+
+}
+hr{
+    width: 1320px;
+height: 0px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding:5px;
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width:769px){
+    .hero-section{
+        width: 734px;
+        margin: 0 auto;
+
+    }
+    .hero-title{width: 50%;
+    }
+    .hero-img img{
+        width: 40%;
+    }
+    .middle-section{
+        flex-direction: column;}
+        .btn-section{
+            flex-direction: row;
+            background-color: white;
+            
+        }
+        .blogs-section{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+}wh
